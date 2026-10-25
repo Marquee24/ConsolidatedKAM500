@@ -12,14 +12,14 @@ namespace ParameterViewCSV_Generator
 
     public class Program
     {
-        public static string groundRun = "_Ground_Run";
-        public static string icdKnownFilePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ICD\\LSS_ICD_KAM500"+ groundRun + ".csv");
+        public static string groundRun = "";//"_Ground_Run";
+        public static string icdKnownFilePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\..\\Data\\04_ICD\\LSS_ICD_KAM500" + groundRun + ".csv");
         public static string parameterDataFolder = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\..\\Data\\03_ConsolidatedData\\");
         public static string time = DateTime.Now.ToString("yyyy-mm-dd_HH-mm-ss");
         public static string ParameterDataPath = "";
         public static string ParameterDataPathEng = "";
         public static string ParameterDataPathHexa = "";
-        public static string SessionId = "LSS-23 October 2026-17-21-54";
+        public static string SessionId = "LSS-23 October 2026-15-18-30";
 
         public static List<Arinc.Arinc_Recorded_DataEng> recList_ArincEng = new List<Arinc.Arinc_Recorded_DataEng>();
         public static Dictionary<string, List<ArincICDEng>> icdDict_ArincEng = new Dictionary<string, List<ArincICDEng>>();
